@@ -1,12 +1,14 @@
-/* MOBILE VERSION */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/* MOBILE VERSION */
 
 body {
     margin: 0;
     font-family: 'montserrat', sans-serif;
 }
+
+
+/*     header     */
 
 .logo {
     max-width: 5em;
@@ -14,13 +16,65 @@ body {
     padding: 10px;
 }
 
+
+/*     navigation     */
+
+input {
+    display: none;
+
+}
+
+label {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 9px;
+    float: right;
+    font-size: 2em;
+
+}
+
+.menu {
+    max-height: 0;
+    overflow: hidden;
+}
+
+input:checked ~ .menu {
+    max-height: 500px;
+    transition: all 1.2s;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    float: right;
+}
+
+.menu a {
+    color: black;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #302A49;
+}
+
+
+/*    homepage    */
+
 .homepic {
     width: 200vw;
     height: auto;
     position: relative;
     overflow: hidden;
-    /* right:60px; */
+    /* right:60px*/
+    margin: 0em 0em 0em -20em
 }
+
 
 .dots {
     padding-top: 5em;
@@ -61,51 +115,13 @@ body {
     padding: 5em 2em 5em 2em;
 }
 
-/*     navigation     */
-
-input {
-    display: none;
-
+.passion img {
+    width: 50vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
-label {
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    padding: 5px 9px;
-    float: right;
-    font-size: 2em;
 
-}
-
-nav {
-    max-height: 0;
-    overflow: hidden;
-}
-
-input:checked ~ nav {
-    max-height: 500px;
-    transition: all 1.2s;
-}
-
-nav ul {
-    list-style: none;
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-    float: right;
-}
-
-nav a {
-    color: black;
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #302A49;
-}
 
 
 /*       footer   */
@@ -116,22 +132,29 @@ footer {
     padding: 5em 2em 5em 2em;
 }
 
+footer p {
+    color: gray;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
 footer ul {
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    word-spacing: 1em;
 
 }
 
 footer li {
     display: inline-block;
 
-
 }
 
 footer a {
     text-decoration: none;
-
     color: black;
+    cursor: pointer;
 
 }
 
@@ -142,20 +165,34 @@ footer a {
     .homepic {
         width: 150%;
         height: auto;
+        margin: 0em 0em 0em -15em
+    }
+
+    .tiril img {
+        width: 30vw;
+    }
+
+    .passion img {
+        width: 30vw;
+    }
+
+    .dots {
+        width: 60vw;
     }
 
     /*     navigation    */
-    nav {
+    .menu {
         max-height: 3em;
     }
 
-    nav ul {
+    .menu ul {
         width: 100%;
     }
 
-    nav li {
+    .menu li {
         display: inline-block;
         float: right;
+        font-size: 1.2em;
     }
 
     label {
@@ -166,8 +203,26 @@ footer a {
 /*  DESKTOP VERSION */
 
 @media all and (min-width:50em) {
+
     .homepic {
         width: 100%;
         height: auto;
+        margin: 0em;
     }
+
+
+    .tiril img {
+        width: 15vw;
+    }
+
+    .passion img {
+        width: 15vw;
+    }
+
+    .dots {
+        width: 30vw;
+    }
+
+
+
 }
