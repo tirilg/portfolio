@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
 body {
     margin: 0;
     font-family: 'montserrat', sans-serif;
@@ -30,6 +31,10 @@ body {
     color: white;
 }
 
+.description {
+    padding: 1em;
+    font-size: 1.2em;
+}
 
 
 /*     navigation     */
@@ -45,7 +50,8 @@ label {
     display: inline-block;
     padding: 5px 9px;
     float: right;
-    font-size: 40px;
+    font-size: 2em;
+
 }
 
 nav {
@@ -67,14 +73,14 @@ nav ul {
 }
 
 nav a {
-    color: gray;
+    color: black;
     display: block;
     padding: 6px 12px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: purple;
+    color: #302A49;
 }
 
 
@@ -82,7 +88,7 @@ nav a:hover {
 
 footer {
     background-color: 8647BE;
-
+    text-align: center;
 }
 
 footer ul {
@@ -101,12 +107,12 @@ footer a {
 
 }
 
-/* DESKTOP VERSION */
+/* TABLET VERSION */
 
-@media all and (min-width:30em) {
+@media all and (min-width:35em) {
 
     .homepic {
-        width: 100%;
+        width: 150%;
         height: auto;
     }
 
@@ -126,5 +132,14 @@ footer a {
 
     label {
         display: none;
+    }
+}
+
+/*  DESKTOP VERSION */
+
+@media all and (min-width:50em) {
+    .homepic {
+        width: 100%;
+        height: auto;
     }
 }
