@@ -76,7 +76,7 @@ input:checked ~ .menu {
 }
 
 
-.dots {
+.dots img {
     padding-top: 5em;
     width: 70vw;
     margin: auto;
@@ -176,7 +176,7 @@ footer a {
         width: 30vw;
     }
 
-    .dots {
+    .dots img {
         width: 60vw;
     }
 
@@ -204,11 +204,50 @@ footer a {
 
 @media all and (min-width:50em) {
 
+    /* grid */
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dots {
+        display: none;
+    }
+    .top {
+        grid-column: 1/-1;
+    }
+
+    .footer {
+        grid-column: 1/-1;
+    }
+
+    .try1 {
+        background-color: blue;
+
+    }
+
+    .try2 {
+        background-color: yellow;
+
+    }
+
+    try3 {
+        background-color: black;
+
+    }
+    .try4 {
+        background-color: brown;
+
+    }
+
+
     .homepic {
         width: 100%;
         height: auto;
         margin: 0em;
+
     }
+
 
 
     .tiril img {
@@ -219,7 +258,7 @@ footer a {
         width: 15vw;
     }
 
-    .dots {
+    .dots img {
         width: 30vw;
     }
 
