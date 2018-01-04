@@ -1,17 +1,51 @@
 /* MOBILE VERSION */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+}
+
+.logo {
+    max-width: 5em;
+    float: left;
+    padding: 10px;
+}
+
+.homepic {
+    width: 200vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* right:60px; */
+}
+
+.welcome-text {
+    position: absolute;
+    top: 1.5em;
+    left: 50%;
+    right: 50%;
+    font-size: 3em;
+    color: white;
+}
+
+
+
 /*     navigation     */
 
 input {
     display: none;
+
 }
 
 label {
-    color: gray;
+    color: black;
     cursor: pointer;
     display: inline-block;
     padding: 5px 9px;
     float: right;
+    font-size: 40px;
 }
 
 nav {
@@ -44,9 +78,37 @@ nav a:hover {
 }
 
 
+/*       footer   */
+
+footer {
+    background-color: 8647BE;
+
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer li {
+    display: inline-block;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+}
+
 /* DESKTOP VERSION */
 
 @media all and (min-width:30em) {
+
+    .homepic {
+        width: 100%;
+        height: auto;
+    }
 
     /*     navigation    */
     nav {
