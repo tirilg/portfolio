@@ -22,20 +22,44 @@ body {
     /* right:60px; */
 }
 
+.dots {
+    padding-top: 5em;
+    width: 70vw;
+    margin: auto;
+    display: block;
+
+
+}
+
 .welcome-text {
     position: absolute;
-    top: 1.5em;
-    left: 50%;
-    right: 50%;
+    display: block;
+    top: 10%;
+    left: 10%;
     font-size: 3em;
     color: white;
 }
 
-.description {
-    padding: 1em;
+.tiril {
+    padding: 5em 2em 5em 2em;
     font-size: 1.2em;
+    text-align: center;
+
 }
 
+.tiril img {
+    width: 50vw;
+    height: auto;
+
+}
+
+.passion {
+    background-color: #302A49;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5em 2em 5em 2em;
+}
 
 /*     navigation     */
 
@@ -89,20 +113,24 @@ nav a:hover {
 footer {
     background-color: 8647BE;
     text-align: center;
+    padding: 5em 2em 5em 2em;
 }
 
 footer ul {
     list-style: none;
     text-decoration: none;
+
 }
 
 footer li {
     display: inline-block;
 
+
 }
 
 footer a {
     text-decoration: none;
+
     color: black;
 
 }
