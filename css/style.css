@@ -41,7 +41,7 @@ label {
 
 input:checked ~ .menu {
     max-height: 500px;
-    transition: all 1.2s;
+    transition: all 1.3s;
 }
 
 .menu ul {
@@ -88,8 +88,9 @@ input:checked ~ .menu {
 .welcome-text {
     position: absolute;
     display: block;
-    top: 10%;
-    left: 10%;
+    top: 20vw;
+    left: 10vw;
+    text-align: center;
     font-size: 3em;
     color: white;
 }
@@ -116,7 +117,7 @@ input:checked ~ .menu {
 }
 
 .passion img {
-    width: 50vw;
+    width: 60vw;
     padding-bottom: 2em;
     padding-top: 2em;
 }
@@ -173,7 +174,7 @@ footer a {
     }
 
     .passion img {
-        width: 30vw;
+        width: 40vw;
     }
 
     .dots img {
@@ -182,7 +183,7 @@ footer a {
 
     /*     navigation    */
     .menu {
-        max-height: 3em;
+        max-height: 4em;
     }
 
     .menu ul {
@@ -204,6 +205,27 @@ footer a {
 
 @media all and (min-width:50em) {
 
+
+    .homepic {
+        width: 100%;
+        height: auto;
+        margin: 0em;
+
+    }
+
+    .tiril img {
+        width: 15vw;
+    }
+
+    .passion img {
+        width: 25vw;
+    }
+
+    .dots img {
+        width: 30vw;
+    }
+
+
     /* grid */
     .wrapper {
         display: grid;
@@ -221,11 +243,19 @@ footer a {
         grid-column: 1/-1;
     }
 
-    .try1 {
-        background-color: blue;
+
+
+    /* Project page */
+    /* .tbs {
+        background-image: url(/images/TBS-still.jpg);
+        background-size: 30em;
 
     }
 
+    .tbs:hover {
+        background-image: url(/images/TBS.gif)
+    }
+    */
     .try2 {
         background-color: yellow;
 
@@ -240,28 +270,42 @@ footer a {
 
     }
 
+    /*    trying something  */
+    .container {
+        position: relative;
+        width: 100%;
+    }
 
-    .homepic {
+    .tbs-image {
+        display: block;
+        opacity: 1;
         width: 100%;
         height: auto;
-        margin: 0em;
+        transition: 1s ease;
+        backface-visibility: hidden;
 
     }
 
+    .tbs-text {
+        transition: 1s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
 
 
-    .tiril img {
-        width: 15vw;
     }
 
-    .passion img {
-        width: 15vw;
+    .tbs-text h1 {
+        color: white;
     }
 
-    .dots img {
-        width: 30vw;
+    .container:hover .tbs-image {
+        opacity: 0.3;
     }
 
-
-
-}
+    .container:hover .tbs-text {
+        opacity: 1;
+    }
