@@ -1,1 +1,68 @@
+/* MOBILE VERSION */
 
+/*     navigation     */
+
+input {
+    display: none;
+}
+
+label {
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 9px;
+    float: right;
+}
+
+nav {
+    max-height: 0;
+    overflow: hidden;
+}
+
+input:checked ~ nav {
+    max-height: 500px;
+    transition: all 1.2s;
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    float: right;
+}
+
+nav a {
+    color: gray;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+
+/* DESKTOP VERSION */
+
+@media all and (min-width:30em) {
+
+    /*     navigation    */
+    nav {
+        max-height: 3em;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav li {
+        display: inline-block;
+        float: right;
+    }
+
+    label {
+        display: none;
+    }
+}
