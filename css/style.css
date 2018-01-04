@@ -105,6 +105,8 @@ input:checked ~ .menu {
 .tiril img {
     width: 50vw;
     height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
 
 }
 
@@ -157,6 +159,25 @@ footer a {
     color: black;
     cursor: pointer;
 
+}
+
+/* about me page */
+
+.about-header {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.about-text {
+    position: absolute;
+    display: block;
+    top: 20vw;
+    right: 50vw;
+    font-size: 1em;
+    color: white;
 }
 
 /* TABLET VERSION */
