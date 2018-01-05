@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/*    LOADING SCREEN   */
+
 .spinner {
     width: 4em;
     height: 4em;
@@ -14,7 +16,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    animation: spin 1s infinite linear;
+    animation: spin 2s infinite linear;
 
 }
 
@@ -80,7 +82,7 @@ label {
 
 input:checked ~ .menu {
     max-height: 500px;
-    transition: all 1.3s;
+    transition: all 1.5s linear;
 }
 
 .menu ul {
@@ -111,7 +113,8 @@ input:checked ~ .menu {
     position: relative;
     overflow: hidden;
     /* right:60px*/
-    margin: 0em 0em 0em -20em
+    /*  margin: 0em 0em 0em -20em; */
+    /*shows different part of image */
 }
 
 
@@ -202,11 +205,11 @@ footer a {
 
 /* about me page */
 
-.about-header {
-    width: 100vw;
-    height: auto;
+.header {
+    width: 130vw;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+
 
 }
 
@@ -218,6 +221,63 @@ footer a {
     font-size: 1em;
     color: white;
 }
+
+.moi img {
+    width: 100%;
+}
+
+/*    projects page   */
+
+.project-text {
+    position: absolute;
+    display: block;
+    top: 20vw;
+    right: 50vw;
+    font-size: 1em;
+    color: white;
+
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.tbs-image {
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+
+}
+
+.tbs-text {
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+
+}
+
+.tbs-text h1 {
+    color: white;
+}
+
+.container:hover .tbs-image {
+    opacity: 0.3;
+}
+
+.container:hover .tbs-text {
+    opacity: 1;
+}
+
 
 /* TABLET VERSION */
 
