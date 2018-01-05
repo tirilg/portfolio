@@ -111,7 +111,7 @@ input:checked ~ .menu {
     width: 200vw;
     height: auto;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     /* right:60px*/
     /*  margin: 0em 0em 0em -20em; */
     /*shows different part of image */
@@ -130,11 +130,13 @@ input:checked ~ .menu {
 .welcome-text {
     position: absolute;
     display: block;
-    top: 20vw;
+    top: 30vw;
     left: 10vw;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.2em;
     color: white;
+    overflow-x: hidden;
+
 }
 
 .tiril {
@@ -248,6 +250,12 @@ footer a {
 
 /*    projects page   */
 
+.web {
+    grid-column: 1/-1;
+    padding-top: 5em;
+    text-align: center;
+}
+
 .project-text {
     position: absolute;
     display: block;
@@ -273,6 +281,7 @@ footer a {
     backface-visibility: hidden;
 
 }
+
 
 .tbs-text {
     transition: 1s ease;
@@ -429,7 +438,7 @@ footer a {
 
     }
 
-    /*    trying something  */
+    /*    text/overlay on hover
     .container {
         position: relative;
         width: 100%;
@@ -468,3 +477,5 @@ footer a {
     .container:hover .tbs-text {
         opacity: 1;
     }
+
+    */
