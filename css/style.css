@@ -157,7 +157,7 @@ input:checked ~ .menu {
     color: white;
     font-size: 1.2em;
     text-align: center;
-    padding: 5em 2em 5em 2em;
+    padding: 8em 2em 8em 2em;
 }
 
 .passion img {
@@ -167,7 +167,7 @@ input:checked ~ .menu {
 }
 
 .adobe {
-    padding: 5em 2em 5em 2em;
+    padding: 8em 2em 8em 2em;
     font-size: 1.2em;
     text-align: center;
 }
@@ -184,9 +184,9 @@ input:checked ~ .menu {
 /*       footer   */
 
 footer {
-    background-color: #DBB9CA;
+    background-color: rgba(205, 151, 218, .65);
     text-align: center;
-    padding: 5em 2em 5em 2em;
+    padding: 4em 2em 4em 2em;
 }
 
 footer p {
@@ -217,25 +217,33 @@ footer a {
 
 /* about me page */
 
-.header {
-    width: 130vw;
-    position: relative;
-    overflow-x: hidden;
-
-
-}
-
-.about-text {
-    position: absolute;
-    display: block;
-    top: 20vw;
-    right: 50vw;
-    font-size: 1em;
-    color: white;
+.moi {
+    padding: 5em 2em 1em 2em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .moi img {
-    width: 100%;
+    width: 70vw;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+}
+
+.general {
+    background-color: #302A49;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 5em 2em 5em 2em;
+}
+
+.hobbies {
+    padding: 5em 2em 5em 2em;
+    font-size: 1em;
+    text-align: center;
+
 }
 
 /*    projects page   */
@@ -291,14 +299,20 @@ footer a {
 }
 
 
+
 /* TABLET VERSION */
 
-@media all and (min-width:35em) {
+@media all and (min-width:40em) {
 
     .homepic {
         width: 150%;
         height: auto;
         margin: 0em 0em 0em -15em
+    }
+
+    .tiril {
+        padding-top: 10em;
+        padding-bottom: 10em;
     }
 
     .tiril img {
@@ -309,8 +323,19 @@ footer a {
         width: 40vw;
     }
 
+
+    .passion {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+
     .dots img {
         width: 60vw;
+    }
+
+    .adobe {
+        padding-top: 10em;
+        padding-bottom: 10em;
     }
 
     /*     navigation    */
@@ -332,6 +357,8 @@ footer a {
         display: none;
     }
 }
+
+/* grid */
 
 /*  DESKTOP VERSION */
 
@@ -361,7 +388,7 @@ footer a {
     /* grid */
     .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .dots {
