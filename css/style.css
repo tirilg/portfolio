@@ -1,10 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+.spinner {
+    width: 4em;
+    height: 4em;
+
+    border: 2px solid gray;
+    border-top: 3px solid #3E247F;
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
 /* MOBILE VERSION */
 
 body {
     margin: 0;
     font-family: 'montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
