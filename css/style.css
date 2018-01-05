@@ -166,19 +166,31 @@ input:checked ~ .menu {
     padding-top: 2em;
 }
 
+.adobe {
+    padding: 5em 2em 5em 2em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.adobe img {
+    width: 70vw;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
 
 
 
 /*       footer   */
 
 footer {
-    background-color: 8647BE;
+    background-color: #DBB9CA;
     text-align: center;
     padding: 5em 2em 5em 2em;
 }
 
 footer p {
-    color: gray;
+    color: white;
     font-size: 0.8em;
     padding: 2em;
 }
