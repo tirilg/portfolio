@@ -250,14 +250,40 @@ footer a:hover {
     background-color: #302A49;
     color: white;
     padding: 5em 2em 5em 2em;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
 
 }
 
+.hobbies img {
+    width: 70vw;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.contact {
+    color: black;
+    padding: 5em 2em 5em 2em;
+    font-size: 1em;
+    text-align: center;
+}
+
+button {
+    width: 15em;
+    height: 4em;
+    font-size: 1em;
+    font-family: 'montserrat', sans-serif;
+    background-color: lavender;
+    border: none;
+}
+
+
+
+
 /*    projects page   */
 
-.web {
+.theme {
     grid-column: 1/-1;
     padding-top: 5em;
     text-align: center;
@@ -289,6 +315,15 @@ footer a:hover {
 
 }
 
+.rek-image {
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+}
+
 
 .tbs-text {
     transition: 1s ease;
@@ -298,8 +333,17 @@ footer a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
 
 
+.rek-text {
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .tbs-text h1 {
@@ -310,7 +354,15 @@ footer a:hover {
     opacity: 0.3;
 }
 
+.container:hover .rek-image {
+    opacity: 0.3;
+}
+
 .container:hover .tbs-text {
+    opacity: 1;
+}
+
+.container:hover .rek-text {
     opacity: 1;
 }
 
@@ -318,7 +370,15 @@ footer a:hover {
     opacity: 0.3;
 }
 
-container:active tbs-text {
+container:active .tbs-text {
+    opacity: 1;
+}
+
+.container:active .rek-image {
+    opacity: 0.3;
+}
+
+container:active .rek-text {
     opacity: 1;
 }
 
@@ -326,7 +386,7 @@ container:active tbs-text {
 
 /* TABLET VERSION */
 
-@media all and (min-width:40em) {
+@media all and (min-width:35em) {
 
     .homepic {
         width: 150%;
@@ -360,6 +420,18 @@ container:active tbs-text {
     .adobe {
         padding-top: 10em;
         padding-bottom: 10em;
+    }
+
+    .adobe img {
+        width: 50vw;
+    }
+
+    .moi img {
+        width: 50vw;
+    }
+
+    .hobbies img {
+        width: 55vw;
     }
 
     /*     navigation    */
@@ -407,7 +479,17 @@ container:active tbs-text {
     .dots img {
         width: 30vw;
     }
+    .adobe img {
+        width: 40vw;
+    }
 
+    .moi img {
+        width: 25vw;
+    }
+
+    .hobbies img {
+        width: 30vw
+    }
 
     /* grid */
     .wrapper {
@@ -425,6 +507,8 @@ container:active tbs-text {
     .footer {
         grid-column: 1/-1;
     }
+
+
 
 
 
