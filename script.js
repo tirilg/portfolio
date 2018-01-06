@@ -1,11 +1,11 @@
 let overlay = document.getElementById("overlay");
-let scrollEventHandler = function ()
+//let scrollEventHandler = function ()
 
-{
-    window.scroll(0, window.pageYOffset)
-}
+//{
+// window.scroll(0, window.pageYOffset)
+//}
 
-window.addEventListener("scroll", scrollEventHandler, false);
+//window.addEventListener("scroll", scrollEventHandler, false);
 //loading screen
 window.addEventListener('load', function () {
     console.log('loading');
