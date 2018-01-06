@@ -42,10 +42,12 @@
 
 /* MOBILE VERSION */
 
+html,
 body {
     margin: 0;
     font-family: 'montserrat', sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 
@@ -109,10 +111,10 @@ input:checked ~ .menu {
 /*    homepage    */
 
 .homepic {
-    width: 200vw;
+    /* width: 200vw; */
+    width: 200%;
     height: auto;
     position: relative;
-    overflow-x: hidden;
     /* right:60px*/
     /*  margin: 0em 0em 0em -20em; */
     /*shows different part of image */
@@ -288,6 +290,15 @@ button {
     padding-top: 5em;
     text-align: center;
 }
+
+.theme-2 {
+    background-color: #302A49;
+    color: white;
+    grid-column: 1/-1;
+    padding-top: 5em;
+    text-align: center;
+}
+
 
 .project-text {
     position: absolute;
@@ -494,7 +505,7 @@ container:active .rek-text {
     /* grid */
     .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .dots {
