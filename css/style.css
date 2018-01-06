@@ -82,13 +82,13 @@ label {
 
 input:checked ~ .menu {
     max-height: 500px;
-    transition: all 1.5s linear;
+    transition: all 1s linear;
 }
 
 .menu ul {
     list-style: none;
     display: block;
-    padding: 6px 12px;
+    padding: 5px 20px;
     text-decoration: none;
     float: right;
 }
@@ -96,12 +96,13 @@ input:checked ~ .menu {
 .menu a {
     color: black;
     display: block;
-    padding: 6px 12px;
+    padding: 8px 14px;
     text-decoration: none;
 }
 
 .menu a:hover {
-    color: #302A49;
+    color: gray;
+    transition: 0.8s ease;
 }
 
 
@@ -217,6 +218,11 @@ footer a {
 
 }
 
+footer a:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
 /* about me page */
 
 .moi {
@@ -234,14 +240,15 @@ footer a {
 }
 
 .general {
-    background-color: #302A49;
-    color: white;
+    color: black;
     font-size: 1em;
     text-align: center;
-    padding: 5em 2em 5em 2em;
+    padding: 0em 2em 2em 2em;
 }
 
 .hobbies {
+    background-color: #302A49;
+    color: white;
     padding: 5em 2em 5em 2em;
     font-size: 1em;
     text-align: center;
@@ -304,6 +311,14 @@ footer a {
 }
 
 .container:hover .tbs-text {
+    opacity: 1;
+}
+
+.container:active .tbs-image {
+    opacity: 0.3;
+}
+
+container:active tbs-text {
     opacity: 1;
 }
 
