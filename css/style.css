@@ -57,6 +57,7 @@ body {
     max-width: 5em;
     float: left;
     padding: 10px;
+
 }
 
 
@@ -75,11 +76,14 @@ label {
     float: right;
     font-size: 2em;
 
+
 }
 
 .menu {
     max-height: 0;
     overflow: hidden;
+
+
 }
 
 input:checked ~ .menu {
@@ -93,6 +97,7 @@ input:checked ~ .menu {
     padding: 5px 20px;
     text-decoration: none;
     float: right;
+
 }
 
 .menu a {
@@ -282,21 +287,54 @@ button {
 
 
 
-
 /*    projects page   */
+
+.start {
+    background-color: #302A49;
+    margin-top: 4.1em;
+
+}
+
+.start img {
+    width: 200%;
+    height: auto;
+    position: relative;
+
+}
+
+.start h1 {
+    padding: 1em 2em 1em 2em;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.start p {
+    padding: 1em 2em 3em 2em;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+
 
 .theme {
     grid-column: 1/-1;
-    padding-top: 5em;
+    padding: 1em 2em 1em 2em;
+    font-size: 1em;
     text-align: center;
+    color: black;
+
 }
 
 .theme-2 {
     background-color: #302A49;
-    color: white;
     grid-column: 1/-1;
-    padding-top: 5em;
+    padding: 1em 2em 1em 2em;
+    font-size: 1em;
     text-align: center;
+    color: white;
+
 }
 
 
@@ -399,6 +437,10 @@ container:active .rek-text {
 
 @media all and (min-width:35em) {
 
+
+    .start {
+        margin: 0;
+    }
     .homepic {
         width: 150%;
         height: auto;
@@ -471,6 +513,9 @@ container:active .rek-text {
 
 @media all and (min-width:50em) {
 
+    .start {
+        margin: 0;
+    }
 
     .homepic {
         width: 100%;
@@ -516,6 +561,10 @@ container:active .rek-text {
     }
 
     .footer {
+        grid-column: 1/-1;
+    }
+
+    .start {
         grid-column: 1/-1;
     }
 
