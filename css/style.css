@@ -292,6 +292,7 @@ button {
 .start {
     background-color: #302A49;
     margin-top: 4.1em;
+    padding-bottom: 4em;
 
 }
 
@@ -303,20 +304,51 @@ button {
 }
 
 .start h1 {
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em 0em 2em;
     font-size: 2em;
     text-align: center;
     color: white;
 }
 
 .start p {
-    padding: 1em 2em 3em 2em;
-    font-size: 1em;
+    padding: 1em 2em 4em 2em;
+    font-size: 0.9em;
     text-align: center;
     color: white;
 }
 
+/*     navigation    */
 
+.navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+
+
+}
+
+.navi a {
+    display: inline-block;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 40%;
+    border: 1px solid white;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navi li {
+    display: inline;
+    max-width: 100%;
+    font-size: 0.9em;
+}
 
 .theme {
     grid-column: 1/-1;
@@ -494,6 +526,7 @@ container:active .rek-text {
 
     .menu ul {
         width: 100%;
+
     }
 
     .menu li {
@@ -504,6 +537,7 @@ container:active .rek-text {
 
     label {
         display: none;
+
     }
 }
 
