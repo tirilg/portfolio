@@ -245,17 +245,26 @@ footer a:hover {
 
 }
 
+
+.about-dots img {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    width: 70vw;
+    margin: auto;
+    display: block;
+}
+
 .general {
     color: black;
     font-size: 1em;
     text-align: center;
-    padding: 0em 2em 2em 2em;
+    padding: 1em 2em 4em 2em;
 }
 
 .hobbies {
     background-color: #302A49;
     color: white;
-    padding: 5em 2em 5em 2em;
+    padding: 9em 2em 9em 2em;
     font-size: 1.1em;
     text-align: center;
 
@@ -329,12 +338,13 @@ button {
 
 .container a {
     text-decoration: none;
-    color: #663695;
+    color: #403473;
     line-height: 2em;
+    font-size: 1em;
 }
 
 .container a:hover {
-    color: gray;
+    color: rgb(205, 151, 218);
     transition: 0.5s ease;
 }
 
@@ -365,6 +375,11 @@ button {
     color: white;
     text-decoration: none;
 
+}
+
+.navi a:hover {
+    color: rgba(205, 151, 218, .65);
+    transition: 0.6s ease;
 }
 
 .navi li {
@@ -471,11 +486,19 @@ hr {
     -ms-transform: translate(-50%, -50%);
 }
 
+.rek-text p {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+.rek-text h1 {
+    font-size: 1.4em;
+}
 
 
 
 .container:hover .rek-image {
-    opacity: 0.3;
+    opacity: 0.25;
 }
 
 
@@ -486,7 +509,7 @@ hr {
 
 
 .container:active .rek-image {
-    opacity: 0.3;
+    opacity: 0.25;
 }
 
 container:active .rek-text {
@@ -519,10 +542,18 @@ container:active .rek-text {
         display: none;
     }
 
+    /*   homepage    */
     .homepic {
         width: 150%;
         height: auto;
         margin: 0em 0em 0em -15em
+    }
+
+    .welcome-text {
+        top: 20vw;
+        left: 10vw;
+        font-size: 2.3em;
+
     }
 
     .tiril {
@@ -563,6 +594,16 @@ container:active .rek-text {
 
 
     /* about me page   */
+    .general {
+
+        padding: 2em 5em 2em 5em;
+    }
+
+    .hobbies {
+        padding: 15em 5em 15em 5em;
+
+    }
+
     .moi img {
         width: 50vw;
     }
@@ -570,7 +611,10 @@ container:active .rek-text {
     .hobbies img {
         width: 55vw;
     }
+    .about-dots img {
+        width: 40vw;
 
+    }
 
 
     /*   projects page    */
@@ -586,7 +630,7 @@ container:active .rek-text {
 
 /*  DESKTOP VERSION */
 
-@media all and (min-width:48em) {
+@media all and (min-width:52em) {
 
 
     /*     homepage    */
@@ -597,7 +641,12 @@ container:active .rek-text {
         position: relative;
     }
 
+    .welcome-text {
+        top: 16vw;
+        left: 10vw;
+        font-size: 2.6em;
 
+    }
 
 
     .tiril img {
@@ -625,6 +674,21 @@ container:active .rek-text {
         width: 30vw
     }
 
+    .about-dots img {
+        width: 20vw;
+
+    }
+
+    .general {
+
+        padding: 2em 12em 2em 12em;
+    }
+
+    .hobbies {
+        padding: 15em 12em 15em 12em;
+
+    }
+
     /*      projects page    */
     .start img {
         width: 100%;
@@ -633,6 +697,16 @@ container:active .rek-text {
     #seperate-top {
         display: none;
     }
+
+    .theme {
+        padding: 12em 15em 12em 15em;
+    }
+
+    .theme-2 {
+        padding: 12em 15em 12em 15em;
+
+    }
+
 
     /* grid */
     .wrapper {
@@ -669,6 +743,7 @@ container:active .rek-text {
         grid-column: 1/-1;
         margin: 0;
     }
+
 
 
 
