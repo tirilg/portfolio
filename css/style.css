@@ -291,15 +291,12 @@ button {
 
 .start {
     background-color: #302A49;
-    margin-top: 4.1em;
     padding-bottom: 4em;
-
 }
 
 .start img {
     width: 200%;
     height: auto;
-    position: relative;
 
 }
 
@@ -350,12 +347,19 @@ button {
     font-size: 0.9em;
 }
 
+/*    dots     */
+
+#seperate-top {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1em;
+}
+
 .seperate {
     color: rgba(0, 0, 0, .4);
-    font-size: 1em;
     text-align: center;
     padding: 2em 2em 2em 2em;
-    letter-spacing: 0.8em;
+    letter-spacing: 1em;
 }
 
 .seperate-two {
@@ -366,6 +370,9 @@ button {
     padding: 2em 2em 2em 2em;
     letter-spacing: 0.8em;
 }
+
+
+/*     themes    */
 
 .theme {
     grid-column: 1/-1;
@@ -397,6 +404,7 @@ button {
 
 }
 
+/*       hover effect     */
 
 .container {
     position: relative;
@@ -454,10 +462,26 @@ container:active .rek-text {
 
 @media all and (min-width:35em) {
 
-
-    .start {
-        margin: 0;
+    /*     navigation    */
+    .menu {
+        max-height: 4em;
     }
+
+    .menu ul {
+        width: 100%;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        float: right;
+        font-size: 1.2em;
+    }
+
+    label {
+        display: none;
+    }
+
     .homepic {
         width: 150%;
         height: auto;
@@ -496,6 +520,8 @@ container:active .rek-text {
         width: 50vw;
     }
 
+
+    /* about me page   */
     .moi img {
         width: 50vw;
     }
@@ -504,25 +530,14 @@ container:active .rek-text {
         width: 55vw;
     }
 
-    /*     navigation    */
-    .menu {
-        max-height: 4em;
+
+
+    /*   projects page    */
+    .header-pic {
+        width: 200%;
     }
-
-    .menu ul {
-        width: 100%;
-
-    }
-
-    .menu li {
-        display: inline-block;
-        float: right;
-        font-size: 1.2em;
-    }
-
-    label {
+    #seperate-top {
         display: none;
-
     }
 }
 
@@ -530,17 +545,20 @@ container:active .rek-text {
 
 /*  DESKTOP VERSION */
 
-@media all and (min-width:50em) {
+@media all and (min-width:48em) {
 
-    .start {
-        margin: 0;
-    }
 
     .homepic {
         width: 100%;
         height: auto;
-        margin: 0em;
+        margin: 0;
+        position: relative;
+    }
 
+    .header-pic {
+        width: 100%;
+        height: auto;
+        margin: 0em;
     }
 
     .tiril img {
@@ -566,6 +584,10 @@ container:active .rek-text {
         width: 30vw
     }
 
+    #seperate-top {
+        display: none;
+    }
+
     /* grid */
     .wrapper {
         display: grid;
@@ -579,7 +601,6 @@ container:active .rek-text {
     .seperate {
         display: none;
     }
-
     .seperate-two {
         display: none;
     }
@@ -593,36 +614,11 @@ container:active .rek-text {
 
     .start {
         grid-column: 1/-1;
+        margin: 0;
     }
 
 
 
-
-
-    /* Project page */
-    /* .tbs {
-        background-image: url(/images/TBS-still.jpg);
-        background-size: 30em;
-
-    }
-
-    .tbs:hover {
-        background-image: url(/images/TBS.gif)
-    }
-    */
-    .try2 {
-        background-color: yellow;
-
-    }
-
-    try3 {
-        background-color: black;
-
-    }
-    .try4 {
-        background-color: brown;
-
-    }
 
     /*    text/overlay on hover
     .container {
