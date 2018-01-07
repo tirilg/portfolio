@@ -350,6 +350,23 @@ button {
     font-size: 0.9em;
 }
 
+.seperate {
+    color: rgba(0, 0, 0, .4);
+    font-size: 1em;
+    text-align: center;
+    padding: 2em 2em 2em 2em;
+    letter-spacing: 0.8em;
+}
+
+.seperate-two {
+    background-color: #302A49;
+    color: rgba(255, 255, 255, .7);
+    font-size: 1em;
+    text-align: center;
+    padding: 2em 2em 2em 2em;
+    letter-spacing: 0.8em;
+}
+
 .theme {
     grid-column: 1/-1;
     padding: 1em 2em 1em 2em;
@@ -588,6 +605,14 @@ container:active .rek-text {
     }
 
     .dots {
+        display: none;
+    }
+
+    .seperate {
+        display: none;
+    }
+
+    .seperate-two {
         display: none;
     }
     .top {
