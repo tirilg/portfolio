@@ -166,7 +166,7 @@ input:checked ~ .menu {
     color: white;
     font-size: 1.2em;
     text-align: center;
-    padding: 8em 2em 8em 2em;
+    padding: 12em 2em 12em 2em;
 }
 
 .passion img {
@@ -176,7 +176,7 @@ input:checked ~ .menu {
 }
 
 .adobe {
-    padding: 8em 2em 8em 2em;
+    padding: 12em 2em 12em 2em;
     font-size: 1.2em;
     text-align: center;
 }
@@ -264,7 +264,7 @@ footer a:hover {
 .hobbies {
     background-color: #302A49;
     color: white;
-    padding: 9em 2em 9em 2em;
+    padding: 12em 2em 12em 2em;
     font-size: 1.1em;
     text-align: center;
 
@@ -277,21 +277,6 @@ footer a:hover {
     padding-top: 2em;
 }
 
-.contact {
-    color: black;
-    padding: 5em 2em 5em 2em;
-    font-size: 1em;
-    text-align: center;
-}
-
-button {
-    width: 15em;
-    height: 4em;
-    font-size: 1em;
-    font-family: 'montserrat', sans-serif;
-    background-color: lavender;
-    border: none;
-}
 
 
 
@@ -693,7 +678,7 @@ container:active .rek-text {
         padding: 12em 13em 12em 13em;
     }
     .adobe {
-        padding: 12em 13em 12em 13em;
+        padding: 15em 13em 15em 13em;
     }
     .tiril img {
         width: 15vw;
